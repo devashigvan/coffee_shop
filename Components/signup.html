@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Coffee_Shop // Signup_page</title>
+    <link rel="icon" type="image/jpg" href="../Images/logo.ico">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./component.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Acme&family=Pacifico&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="../index.html">Coffee <span class="golden">Shop</span></a>
+            </div>
+            <div class="nav">
+                <div class="nav-list">
+                    <ul>
+                        <li class="list-item active"><a href="../index.html">Home</a></li>
+                        <li class="list-item" onclick="blog()"><a href="#">Blog</a></li>
+                        <li class="list-item"><a href="./gallary.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="nav-menu">
+                    <ul>
+                        <li>
+                            <input type="search" placeholder="Search"><button type="button"><i class="fas fa-search"></i></button>
+                        </li>
+                        <li class="menu-item"><a href="./cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                        <li class="menu-item" onclick="profile()"><i class="fas fa-user-circle"></i></li>
+                    </ul>
+                </div>
+                <div class="menu-btn" onclick="menu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="menu-btn-list">
+                    <ul>
+                        <li><a href="./profile.html">Profile</a></li>
+                        <li><a href="./signup.html">Sign Up</a></li>
+                        <li><a href="./signin.html">Sign In</a></li>
+                        <hr>
+                        <li class="active"><a href="">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <br>
+    <main>
+        <div class="signup">
+            <h1 align="center">Sign <span class="golden">Up</span></h1><br>
+            <form align="center">
+                <input class="list semail" type="email" placeholder="Enter Email ID" id="semail"><br>
+                <input class="list spassword" type="password" placeholder="Enter Password" id="spass"><br>
+                <input type="checkbox">Remember Me!<br><br>
+                <button type="button" onclick="signup()">Sign Up</button><br><br>
+                <label>Not have an account? <a href="./signin.html">Sign In</a></label>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-row">
+            <div class="footer-col-3">
+                <label>Developed By: Devendra Namdev Shigvan</label><br>
+                <label>Copyrigh By 2021&copy;, All rights are reserved</label>
+            </div>
+            <div class="footer-col-3">
+                <ul>
+                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-github"></i></a></li>
+                    <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./index.js" type="text/javascript"></script>
+<script src="./component.js" type="text/javascript"></script>
+</html>

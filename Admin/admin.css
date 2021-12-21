@@ -1,0 +1,485 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+:root{
+	--family1: 'Sacramento', cursive;
+	--family2: 'Acme', sans-serif;
+    --family3: 'Pacifico', cursive;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    color: #ffffff;
+    background-color: #000000;
+    font-family: var(--family2);
+}
+
+/*----- Header -----*/
+.navbar{
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    background: radial-gradient(brown,#000);
+}
+.navbar, .nav, .nav-list ul, .nav-menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.nav-list ul li, .nav-menu ul li{
+    padding: 0 10px;
+}
+.navbar .logo a{
+    color: #ffffff;
+    font-size: 40px;
+    padding-left: 20px;
+}
+.golden{
+    color: #b8860b;
+}
+.nav-list ul li a, .nav-menu ul li a{
+    color: #ffffff;
+}
+.active{
+    background-color: brown;
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+.nav-list ul li{
+    margin: 0 3px;
+    padding: 8px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+.nav-list ul li:hover{
+    background-color: brown;
+    border: 1px solid #fff;
+}
+.nav-menu input[type="search"]{
+    width: 200px;
+    height: 30px;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+.nav-menu button{
+    width: 70px;
+    height: 30px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+.nav-menu button:hover{
+    color: #fff;
+    background-color: brown;
+}
+.fa-shopping-cart, .fa-user-circle{
+    font-size: 25px;
+}
+.menu-btn{
+    display: none;
+    font-size: 30px;
+}
+.menu-btn-list ul{
+    display: none;
+    position: absolute;
+    top: 75px;
+    right: 10px;
+    background-color: #000;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #fff;
+}
+.menu-btn-list ul li{
+    padding: 10px 50px;
+    transition: all 0.5 ease;
+}
+.menu-btn-list ul li:hover{
+    background-color: brown;
+    border-radius: 5px;
+}
+.menu-btn-list ul li a{
+    color: #ffffff;
+}
+/*----- End Header -----*/
+
+/*----- Admin -----*/
+.cart{
+    margin: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    background: rgba(128, 128, 128, 0.2);
+}
+.cart h1{
+    padding: 5px;
+    text-shadow: 3px 3px 5px #000;
+    background-color: #666666;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.admin-row{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    'col-1 col-2 col-2 col-2';
+}
+.admin-row table{
+    grid-area: col-1;
+    text-align: center;
+    background: radial-gradient(brown,#000);;
+    border-collapse: collapse;
+}
+.admin-row table tr:hover{
+    background-color: gray;
+}
+.admin-row .col-2{
+    grid-area: col-2;
+    color: #000;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.admin-row table tr td{
+    padding: 10px;
+    text-shadow: 3px 3px 5px #000;
+    border: 1px solid #000;
+}
+.admin-row table tr td a{
+    color: #fff;
+    font-size: 24px;
+}
+.banner-title{
+    color: #fff;
+}
+.profile{
+    text-shadow: 3px 3px 5px #000;
+    background-color: gray;
+}
+.admin-profile{
+    font-size: 60px;
+}
+/*----- End Admin -----*/
+
+/*----- Shop Speciality -----*/
+.speciality-row{
+    display: flex;
+    justify-content: space-around;
+}
+/*----- End Shop Speciality -----*/
+
+/*----- Dashboard -----*/
+.dashboard-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+.sales{
+    color: #fff;
+    text-shadow: 0px 0px 10px #000;
+    border: 1px solid #000;
+    padding: 30px 90px;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../Images/sales.jpg');
+}
+.orders{
+    color: #fff;
+    text-shadow: 0px 0px 10px #000;
+    border: 1px solid #000;
+    padding: 30px 90px;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../Images/orders.jpg');
+}
+.visitors{
+    color: #fff;
+    text-shadow: 0px 0px 10px #000;
+    border: 1px solid #000;
+    padding: 30px 90px;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../Images/visitors.jpg');
+}
+.recent-order table tr{
+    background-color: #1DA1F2;
+}
+.recent-order table tr td{
+    text-shadow: none;
+}
+.status-done{
+    padding: 2px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: aqua;
+}
+.status-progress{
+    padding: 2px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: yellow;
+}
+.status-onhold{
+    padding: 2px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: blue;
+}
+.status-rejected{
+    padding: 2px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: red;
+}
+.back{
+    background-color: #666666;
+}
+/*----- End Dashboard -----*/
+
+/*----- offer -----*/
+.offer-banner{
+    padding: 10px;
+    margin: 10px;
+    background: radial-gradient(#91549a, #000);
+}
+.offer-banner h2{
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+}
+.offer-banner input{
+    padding: 5px;
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+}
+.offer-banner h4{
+    letter-spacing: 1px;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+}
+.offer-slider{
+    padding: 10px;
+    margin: 10px;
+    background: radial-gradient(#91549a, #000);
+}
+.submit-button{
+    padding: 6px 12px;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 25px;
+    background-color: brown;
+    transition: all 0.5s ease;
+}
+.submit-button:hover{
+    color: #b8860b;
+    background-color: #000;
+}
+.success-banner,
+ .success-slider, 
+ .success-navbar, 
+ .success-shop_speciality, 
+ .success-about, 
+ .success-Profile, 
+ .success-today, 
+ .success-contact,
+ .success-footer{
+    display: none;
+    font-weight: 500;
+    color: green;
+    text-shadow: 0px 0px 5px #000;
+}
+.offer-slider textarea{
+    width: 800px;
+    height: 120px;
+    resize: none;
+    border-radius: 5px;
+}
+.offer-banner table{
+    width: 1000px;
+}
+.offer-banner table tr{
+    background-color: #fff;
+}
+.offer-banner table tr th{
+    background-color: #666666;
+}
+.offer-banner table tr td{
+    text-shadow: none;
+}
+.offer-banner table tr td img{
+    width: 75px;
+    height: 50px;
+    margin: -5px;
+}
+.offer-banner table tr td a{
+    color: blue;
+    font-size: 16px;
+}
+.offer-slider h2, .shop-2 h3{
+    text-shadow: 2px 2px 5px #000;
+    color: #fff;
+}
+.offer-slider h4{
+    color: #fff;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px #000;
+}
+/*----- End Offer*/
+
+/*----- Footer -----*/
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    background: radial-gradient(brown,#000);
+}
+.footer-col-3{
+    margin: 10px;
+}
+.footer-col-3 label{
+    text-align: justify;
+}
+.footer-col-3 ul{
+    display: flex;
+}
+.footer-col-3 ul li{
+    padding: 0 10px;
+}
+.footer-col-3 ul li a{
+    color: #fff;
+    font-size: 25px;
+}
+.fa-facebook, .fa-instagram, .fa-twitter, .fa-github, .fa-youtube{
+    transition: all 0.5s ease-in-out;
+}
+.fa-facebook:hover{
+    color: #4267B2;
+    font-size: 35px;
+}
+.fa-instagram:hover{
+    color: #C13584;
+    font-size: 35px;
+}
+.fa-twitter:hover{
+    font-size: 35px;
+    color: #1DA1F2;
+}
+.fa-github:hover{
+    font-size: 35px;
+    color: #666666;
+}
+.fa-youtube:hover{
+    font-size: 35px;
+    color: #FF0000;
+}
+/*----- End Footer -----*/
+
+/*----- Media Query -----*/
+@media screen and (max-width: 1150px){
+    .nav-list ul{
+        display: none;
+        position: absolute;
+        top: 75px;
+        right: 10px;
+        background-color: #000;
+        border-radius: 5px;
+        border: 1px solid #fff;
+    }
+    .nav-list ul li{
+        padding: 10px 50px;
+        margin: 5px;
+    }
+    .menu-btn{
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .nav-menu{
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 10px;
+        background-color: #000;
+        border-radius: 5px;
+        border: 1px solid #fff;
+    }
+    .menu-btn-list ul{
+        top: 125px;
+        right: 10px;
+    }
+    .nav-menu input[type="search"]{
+        width: 168px;
+    }
+    .nav-menu button{
+        font-weight: 500;
+        width: 80px;
+    }
+    .nav-list ul{
+        top: 125px;
+        right: 10px;
+    }
+    .nav-list ul li{
+        padding: 10px 153px;
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 440px){
+    .nav-list ul li{
+        padding: 10px 110px;
+        margin: 5px;
+    }
+    .nav-menu input[type="search"]{
+        width: 120px;
+    }
+    .nav-menu button{
+        font-weight: 500;
+        width: 65px;
+    }
+    .nav-list ul li{
+        padding: 10px 120px;
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 346px){
+    .nav-list ul li{
+        padding: 10px 83px;
+        margin: 5px;
+    }
+    .nav-menu input[type="search"]{
+        width: 90px;
+    }
+    .nav-menu button{
+        font-weight: 500;
+        width: 55px;
+    }
+    .nav-list ul li{
+        padding: 10px 90px;
+        margin: 5px;
+    }
+    .fa-shopping-cart, .fa-user-circle{
+        font-size: 16px;
+    }
+}
